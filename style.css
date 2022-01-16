@@ -1,0 +1,147 @@
+body {
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.osnova {
+    border: none;
+    border-radius: 30px;
+    background-color: aliceblue;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+
+}
+
+.osnovnayacartinka {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.huynya {
+    /* border: blueviolet;
+    border-radius: 10px;
+    background-color: rgb(177, 9, 228);
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    display: inline-block;
+	height: 80px;
+	overflow: hidden;
+    max-width: 870px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 160px;
+    padding-right: 160px; */
+    display: flex;
+    width: 100%;
+    background-color: hsl(225, 100%, 94%);
+    justify-content: space-between;
+    border-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    height: 50px;
+    margin-bottom: 30px;
+    padding-top: 30px;
+
+
+}
+
+.zalupa {
+    display: flex;
+    position: absolute;
+    top: 487px;
+
+}
+
+.content {
+    padding: 50px;
+
+}
+
+.music {
+    width: 50px;
+    height: 50px;
+}
+
+.h3 {
+    padding: 0px;
+    margin: 0px;
+}
+
+.h4 {
+    padding: 0px;
+    margin: 0px;
+    opacity: .3;
+}
+
+.change {
+    background-color: transparent;
+    border: 0px;
+    position: absolute;
+    left: 870px;
+    top: 502px;
+    color: blue;
+    font-weight: bold;
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+
+.h1 {
+    font-size: 30px;
+    height: 50px;
+    font-weight: 900;
+    font-stretch: condensed;
+    margin-bottom: 10px;
+}
+
+.h2 {
+    font-size: 17px;
+    font-weight: 300;
+    opacity: .3;
+    margin-bottom: 40px;
+    padding: 0px;
+}
+
+.proceed {
+    appearance: none;
+    border: 0;
+    border-radius: 10px;
+    background: hsl(245, 75%, 52%);
+    font-weight: bold;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 16px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    white-space: nowrap;
+    cursor: pointer;
+    box-shadow: -1px 5px 5px 5px rgba(9, 3, 100, 0.2);
+}
+.proceeda:hover:not(:active) {
+    background: linear-gradient hsl(245, 75%, 52%), rgb(2, 27, 150) rgb(8, 8, 82);
+  }
+  .proceed:active {
+    top: 1px;
+    background: linear-gradient(rgb(76,77,82), rgb(56,57,62)) rgb(76,77,82);
+    box-shadow:
+     0 0 1px rgba(0,0,0,.5) inset,
+     0 2px 3px rgba(0,0,0,.5) inset,
+     0 1px 1px rgba(255,255,255,.1);
+  }
+
+.cancel {
+    border: none;
+    margin-top: 17px;
+    background-color: hsl(225, 100%, 94%);
+    font-weight: bold;
+    opacity: .6;
+    cursor: pointer;
+}
