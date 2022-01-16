@@ -2,11 +2,14 @@ body {
     background-color: hsl(225, 100%, 94%);
     font-family: 'Red Hat Display', sans-serif;
 }
+* {
+    box-sizing: border-box;
+}
 
 .osnova {
     border: none;
-    border-radius: 30px;
-    background-color: aliceblue;
+    border-radius: 22px;
+    background-color: white;
     width: 450px;
     display: flex;
     flex-direction: column;
@@ -17,96 +20,93 @@ body {
 }
 
 .osnovnayacartinka {
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px;
+}
+
+.content {
+    margin: 50px;
+
 }
 
 .huynya {
-    /* border: blueviolet;
-    border-radius: 10px;
-    background-color: rgb(177, 9, 228);
-    width: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto;
-    display: inline-block;
-	height: 80px;
-	overflow: hidden;
-    max-width: 870px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 160px;
-    padding-right: 160px; */
     display: flex;
     width: 100%;
-    background-color: hsl(225, 100%, 94%);
     justify-content: space-between;
     border-radius: 12px;
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
-    height: 50px;
+    height: 90px;
+    margin-top: 20px;
     margin-bottom: 30px;
-    padding-top: 30px;
-
-
+    background-color: hsl(225, 100%, 98%);
+    padding: 20px;
 }
 
 .zalupa {
     display: flex;
-    position: absolute;
-    top: 487px;
-
 }
 
-.content {
-    padding: 50px;
-
-}
 
 .music {
     width: 50px;
     height: 50px;
+    margin-right: 20px;
+}
+
+.text-container {
+    text-align: center;
+}
+
+.h1 {
+    font-size: 28px;
+    height: 50px;
+    font-weight: 900;
+    font-stretch: condensed;
+    margin: 0;
+    line-height: 1;
+    /* margin-bottom: 10px; */
+    color: hsl(223, 47%, 23%);
+}
+
+.h2 {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 40px;
+    padding: 0px;
+    margin: 0;
+    line-height: 1.5;
+    color: hsl(224, 23%, 55%);
 }
 
 .h3 {
     padding: 0px;
     margin: 0px;
+    font-size: 16px;
+    font-weight: 700;
+    color: hsl(223, 47%, 23%);
 }
 
 .h4 {
     padding: 0px;
     margin: 0px;
-    opacity: .3;
+    font-weight: normal;
+    margin-top: 5px;
+    color: hsl(224, 23%, 55%);
 }
 
 .change {
     background-color: transparent;
     border: 0px;
-    position: absolute;
-    left: 870px;
-    top: 502px;
     color: blue;
     font-weight: bold;
     text-decoration-line: underline;
     cursor: pointer;
+    font-family: inherit;
+    font-size: 14px;
 }
 
-.h1 {
-    font-size: 30px;
-    height: 50px;
-    font-weight: 900;
-    font-stretch: condensed;
-    margin-bottom: 10px;
-}
 
-.h2 {
-    font-size: 17px;
-    font-weight: 300;
-    opacity: .3;
-    margin-bottom: 40px;
-    padding: 0px;
-}
 
 .proceed {
     appearance: none;
