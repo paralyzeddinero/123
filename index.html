@@ -19,30 +19,30 @@
 </head>
 
 <body>
-    <div class='osnova'>
-        <img class='osnovnayacartinka' src='images/illustration-hero.svg' />
-    <div class="content"> 
-        <h1 class='h1'>Order Summary</h1>
+    <div class='container'>
+        <img class='container__image' src='images/illustration-hero.svg' />
+    <div class="container__content container-content"> 
+        <h1 class='container-content__title'>Order Summary</h1>
 
-        <h2 class='h2'> You can now listen to millions of songs, audiobooks, and podcasts on any
+        <h2 class='container-content__subtitle'> You can now listen to millions of songs, audiobooks, and podcasts on any
             device anywhere you like!</h2>
-        <div class='huynya'>
-            <div class='zalupa'>
-                <img class='music' src='images/icon-music.svg' />
-                <div class='text-container'>
+        <div class='container-content__section container-content-section'>
+            <div class='container-content-section__left'>
+                <img class='container-content-section__icon' src='images/icon-music.svg' />
+                <div class='container-content-section__text-wrapper'>
 
-                    <h3 class='h3'>Annual Plan</h3>
-                    <h4 class='h4'>$59.99/year</h4>
+                    <h3 class='container-content-section__title'>Annual Plan</h3>
+                    <h4 class='container-content-section__subtitle'>$59.99/year</h4>
                 </div>
             </div>
-            <button class='change'>
+            <button class='container-content-section__button'>
                Change
             </button>
         </div>
-        <button class='proceed' onclick="window.location.href = 'https://yandex.ru/video/preview/?text=папич%20выйди&path=wizard&parent-reqid=1642348256576105-357795451380038248-sas2-2384-sas-l7-balancer-8080-BAL-6151&wiz_type=vital&filmId=6559018471468942028';">
+        <button class='container-content__button container-content__button--primary' onclick="window.location.href = 'https://yandex.ru/video/preview/?text=папич%20выйди&path=wizard&parent-reqid=1642348256576105-357795451380038248-sas2-2384-sas-l7-balancer-8080-BAL-6151&wiz_type=vital&filmId=6559018471468942028';">
             Proceed to Payment
         </button>
-        <button class='cancel'>
+        <button class='container-content__button container-content__button--secondary'>
             Cancel Order
         </button>
     </div>

@@ -2,11 +2,12 @@ body {
     background-color: hsl(225, 100%, 94%);
     font-family: 'Red Hat Display', sans-serif;
 }
+
 * {
     box-sizing: border-box;
 }
 
-.osnova {
+.container {
     border: none;
     border-radius: 22px;
     background-color: white;
@@ -19,17 +20,17 @@ body {
 
 }
 
-.osnovnayacartinka {
+.container__image {
     border-top-left-radius: 22px;
     border-top-right-radius: 22px;
 }
 
-.content {
+.container__content {
     margin: 50px;
 
 }
 
-.huynya {
+.container-content__section {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -43,12 +44,12 @@ body {
     padding: 20px;
 }
 
-.zalupa {
+.container-content-section__left {
     display: flex;
 }
 
 
-.music {
+.container-content-section__icon {
     width: 50px;
     height: 50px;
     margin-right: 20px;
@@ -58,7 +59,7 @@ body {
     text-align: center;
 }
 
-.h1 {
+.container-content__title {
     font-size: 28px;
     height: 50px;
     font-weight: 900;
@@ -69,7 +70,7 @@ body {
     color: hsl(223, 47%, 23%);
 }
 
-.h2 {
+.container-content__subtitle {
     font-size: 16px;
     font-weight: 300;
     margin-bottom: 40px;
@@ -79,7 +80,7 @@ body {
     color: hsl(224, 23%, 55%);
 }
 
-.h3 {
+.container-content-section__title {
     padding: 0px;
     margin: 0px;
     font-size: 16px;
@@ -87,7 +88,7 @@ body {
     color: hsl(223, 47%, 23%);
 }
 
-.h4 {
+.container-content-section__subtitle {
     padding: 0px;
     margin: 0px;
     font-weight: normal;
@@ -95,7 +96,7 @@ body {
     color: hsl(224, 23%, 55%);
 }
 
-.change {
+.container-content-section__button {
     background-color: transparent;
     border: 0px;
     color: blue;
@@ -106,44 +107,34 @@ body {
     font-size: 14px;
 }
 
-
-
-.proceed {
-    appearance: none;
-    border: 0;
-    border-radius: 10px;
-    background: hsl(245, 75%, 52%);
+.container-content__button {
     font-weight: bold;
-    color: #fff;
-    padding: 8px 16px;
+    padding: 16px;
     font-size: 16px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    white-space: nowrap;
-    cursor: pointer;
-    box-shadow: -1px 5px 5px 5px rgba(9, 3, 100, 0.2);
-}
-
-.proceeda:hover:not(:active) {
-    background: linear-gradient hsl(245, 75%, 52%), rgb(2, 27, 150) rgb(8, 8, 82);
-}
-
-.proceed:active {
-    top: 1px;
-    background: linear-gradient(rgb(76, 77, 82), rgb(56, 57, 62)) rgb(76, 77, 82);
-    box-shadow:
-        0 0 1px rgba(0, 0, 0, .5) inset,
-        0 2px 3px rgba(0, 0, 0, .5) inset,
-        0 1px 1px rgba(255, 255, 255, .1);
-}
-
-.cancel {
+    width: 100%;
     border: none;
-    margin-top: 17px;
-    background-color: hsl(225, 100%, 94%);
-    font-weight: bold;
-    opacity: .6;
+    border-radius: 10px;
     cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.container-content__button--primary {
+    color: white;
+    background: hsl(245, 75%, 52%);
+    box-shadow: 0px 2px 4px 2px rgba(34, 60, 80, 0.4);
+}
+
+.container-content__button--secondary {
+    margin-top: 16px;
+    color: hsl(223, 47%, 23%);
+    background-color: transparent;
+}
+
+.container-content__button:hover {
+    opacity: 0.8;
+}
+
+.container-content__button--secondary:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 4px 2px rgba(34, 60, 80, 0.4);
 }
